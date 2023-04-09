@@ -6,3 +6,9 @@ En general quiero que sea una forma de plasmar mi vida en esta pagina y aplicar 
 
 
 _Esto puede cambiar en el futuro._
+
+### 09/04/2023
+
+Esto cambio un poco y ahora va a ser como un especie de aplicacion que estoy haciendo para poner en practica lo que voy aprendiendo de de desarrollo.
+
+-[x] Mi primer Login con HTML y CSS 
