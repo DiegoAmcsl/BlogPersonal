@@ -6,29 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DiegoAmcsl</title>
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/spinner.css">
     </head>
     <body>
         <div class="container">
             <div class="container--login">
                 <div class="container--form">
-                    <h1>Iniciar sesión</h1>
-                    <form action=" " method="post" class="form--login">
+                    <h1>Iniciar sesion</h1>
+                    <form action=" " method="post" class="form--login" id="formLogin">
                         <div class="form--login__inputs">
-                            <input type="text" name="usuario" id="txtLogUser" class="form__input" placeholder="" required>
+                            <input type="text" name="usuario" id="txtLogUser" class="form__input" placeholder="" >
                             <label for="txtLogUser" class="input__label"> Usuario </label>
-                            <div class="underline"></div>
                         </div>
                         <div class="form--login__inputs">
-                            <input type="password" name="password" id="pswLoginUser" class="form__input" placeholder="" required>
+                            <input type="password" name="password" id="pswLoginUser" class="form__input" placeholder="" >
                             <label for="pswLoginUser" class="input__label"> Password </label>
-                            <div class="underline"></div>
                         </div>
                         <div class="form--login__inputs form--btn">
-                            <input type="button" value="Ingresar" class="btn btn--Login">
+                            <input type="submit" value="Ingresar" class="btn btn--Login btn--disabled" id="btnLogin" disabled>
                         </div>
                     </form>
+                    <div class="hidden" id="spinner">
+                        <div class="loading">
+                            <svg width="64px" height="48px">
+                                <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+                              <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <script src="js/app.js"></script>
     </body>
 </html>

@@ -46,7 +46,6 @@ body {
   font-size: 45px;
   font-weight: 700;
   margin: 1.875rem 0px 0.313em;
-  
 }
 
 .form--login {
@@ -82,6 +81,9 @@ body {
   pointer-events: none;
 }
 
+.form--login__inputs .form__input:focus {
+  border-bottom: 2px solid #000;
+}
 
 .form--login__inputs .form__input:focus ~ .input__label{
   top: -20px;
@@ -89,27 +91,11 @@ body {
   color: #333;
 }
 
-.form--login__inputs .underline {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #333;
-  transform: scaleX(0);
-  transition: all 0.3s ease;
-}
-
-.form--login__inputs .form__input:focus ~ .underline {
-  transform: scaleX(1);
-}
-
-
-
 
 .form--btn {
   text-align: center;
 }
+
 
 
 .btn {
@@ -151,3 +137,38 @@ body {
   box-shadow: none;
   transform: translateY(0);
  }
+ 
+ .btn--disabled{
+  background-color: #3333339f;
+  border: none;
+  color: white;
+}
+
+.input--invalid {
+  display: block;
+  background: #cb3234;
+  color: white;
+  text-align: center;
+  padding: .4rem;
+  border-radius: 5px;
+  /* margin-top: -1px; */
+}
+
+.ingreso--ok{
+  display: block;
+  width: 100%;
+  padding: .4rem;
+  background: #0f940f;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
